@@ -6,17 +6,15 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/26 12:11:41 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/26 12:18:49 by pcervill         ###   ########.fr        #
+#    Updated: 2025/12/01 13:00:32 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= zombie
+NAME	= Fixed
 
-SRC		= main.cpp newZombie.cpp Zombie.cpp randomChump.cpp
+SRC		= main.cpp Fixed.cpp
 
-SRC_DIR	= ./src/
-
-OBJ		= $(addprefix $(SRC_DIR), $(SRC:.cpp=.o))
+OBJ		= $(SRC:.cpp=.o)
 
 CC		= clang++
 

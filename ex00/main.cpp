@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 13:46:08 by pcervill          #+#    #+#             */
-/*   Updated: 2024/09/26 14:02:14 by pcervill         ###   ########.fr       */
+/*   Created: 2024/09/26 13:46:18 by pcervill          #+#    #+#             */
+/*   Updated: 2025/12/01 00:01:13 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Fixed.hpp"
+#include "./Fixed.hpp"
 
-Fixed::Fixed() : n(0)
+int	main (void)
 {
-	std::cout << "Default constructor called" << std::endl;
-}
+	Fixed a;
+	Fixed b(a);
+	Fixed c;
 
-Fixed::Fixed(Fixed &fixed)
-{
-	std::cout << "Copy constructor called" << std::endl;
-	*this = fixed;
-}
+	c = b;
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
 
-Fixed::~Fixed()
-{
-	std::cout << "Destructor called" << std::endl;
+	return (0);
 }
-

@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/26 12:10:59 by pcervill          #+#    #+#              #
-#    Updated: 2024/09/26 13:49:40 by pcervill         ###   ########.fr        #
+#    Updated: 2025/12/01 00:01:05 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,7 @@ NAME	= Fixed
 
 SRC		= main.cpp Fixed.cpp
 
-SRC_DIR	= ./src/
-
-OBJ		= $(addprefix $(SRC_DIR), $(SRC:.cpp=.o))
+OBJ		= $(SRC:.cpp=.o)
 
 CC		= clang++
 

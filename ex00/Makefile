@@ -6,7 +6,7 @@
 #    By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/26 12:10:59 by pcervill          #+#    #+#              #
-#    Updated: 2025/12/01 00:01:05 by pcervill         ###   ########.fr        #
+#    Updated: 2025/12/01 23:57:39 by pcervill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC		= main.cpp Fixed.cpp
 
 OBJ		= $(SRC:.cpp=.o)
 
-CC		= clang++
+CC		= c++
 
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address -g3
 

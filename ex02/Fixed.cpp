@@ -6,7 +6,7 @@
 /*   By: pcervill <pcervill@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 13:46:08 by pcervill          #+#    #+#             */
-/*   Updated: 2025/12/01 13:29:47 by pcervill         ###   ########.fr       */
+/*   Updated: 2025/12/02 11:43:44 by pcervill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,7 @@ Fixed	Fixed::operator+ (const Fixed &a)
 
 Fixed	Fixed::operator- (const Fixed &a)
 {
-	return (a.toFloat() + this->toFloat());
+	return (a.toFloat() - this->toFloat());
 }
 
 Fixed	Fixed::operator* (const Fixed &a)
